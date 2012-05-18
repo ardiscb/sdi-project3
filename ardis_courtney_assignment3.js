@@ -10,6 +10,7 @@ Assignment: Deliverable 3
 /////////
 
 //Global variables
+var ticketsAboveTen = 10;
 
 var person = function(name, dept, age){
 	var name = "My name is " + name;
@@ -35,21 +36,24 @@ var person = function(name, dept, age){
 		dept = newDept;
 	};
 };
-/*
+
 //Procedure that ...
-var procedure = function(){
-	console.log("");
+var greeting = function(){
+	console.log("Thanks for contacting us. ");
 };
-*/
-/*
-//Number function that tests ... with number an array arguments
-var numFunction = function(hardwareTeam, number){
+
+
+//Number function that tests who is working and how many possible
+//tickets they may have. Has a number and an array argument
+var  isAvailable = function(hardwareTeam, number){
+	//Local Variables
+	var i = hardwareTeam.member;
 	//For loop
-	for (var name in hardwareTeam){
+	for (i = String; i > hardwareTeam.length; i++){
 		//Local variable
-		var person = console.log(name + " is working");
+		var teamMember = console.log(hardwareTeam.member[i] + " is working");
 		//Array return
-		return person;
+		return teamMember;
 		//Nested loop
 		for(n = 0; n > possibleTickets.length; n++){
 			//Number return
@@ -57,22 +61,30 @@ var numFunction = function(hardwareTeam, number){
 		};
 	};
 };
-/*
-//Boolean function that tests ... with boolean arguments
-var boolFunction = function(boolean){
-	//While loop
-	while(){
-		//Math
-		Math.floor(this + that);
 
+//Boolean function that tests whether a member from the hardware
+//team has earned a raise. Has array and boolean argument
+var earnRaise = function(hardwareTeam, raise){
+	//Local variables
+	var pay = hardwareTeam.pay;
+	//While loop
+	while(ticketsAboveTen < 11 && ticketsAboveTen > 1){
+		//Math
+		Math.floor(pay * 0.09);
+		console.log(name +" is getting a raise.");
+		//Nested Conditonal
+		if (ticketsAboveTen < 11){
+			ticketsAboveTen++;
+		} else {
+			ticketsAboveTen--;
+		};
 	};
 	//Boolean return
-	return boolean;
+	return raise;
 };
-*/
+
 //String function that tests whether the user has a problem and initiates the first question.
-var stringFunction = function(problem, ticket){
-	//Local variable
+var haveProblem = function(problem, ticket){
 	//Conditional
 	if(problem === "no"){
 		prompt("Are you sure you don't have a problem? Answer \"yes\" or \"no \".");
@@ -100,15 +112,20 @@ var stringFunction = function(problem, ticket){
 console.log(message);
 console.log(dept);
 console.log(age);
+console.log(teamMember);
+console.log(number);
+console.log(raise);
 */
 
 //Outputs
-//console.log this.something (procedure)
+//console.log method:procedure
+greeting();
 var me = new person("Courtney", "USS", 21);
 console.log(me.getName() + " " + me.getDept() + " " + me.age());
-//numFunction(9, 1);
-stringFunction("yes", 0);
-//set Department
+isAvailable("Ron", 1);
+earnRaise(true);
+haveProblem("yes", 0);
+//set dept
 
 //////////
 //Finish//

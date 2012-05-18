@@ -1,24 +1,28 @@
 var hardwareTeam = {
 	"member": [
 		{
-			"name": "Ron",
+			"myName": "Ron",
 			"occupation": "Tier 3",
-			"age": "30"
+			"age": "30",
+			"pay": "45000"
 		},
 		{
-			"name": "Larry",
+			"myName": "Larry",
 			"occupation": "Tier 2",
-			"age": "46"
+			"age": "46",
+			"pay": "37000"	
 		},
 		{
-			"name": "Mike",
+			"myName": "Mike",
 			"occupation": "Tier 2",
-			"age": "35"
+			"age": "35",
+			"pay": "35000"	
 		},		
 		{
-			"name": "Howie",
+			"myName": "Howie",
 			"occupation": "Tier 2",
-			"age": "42"
+			"age": "42",
+			"pay": "40000"	
 		}
 	]
 };
